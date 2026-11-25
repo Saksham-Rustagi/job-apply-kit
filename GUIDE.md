@@ -77,7 +77,7 @@ Test it: run `hermes`, say hi, make sure it answers. `hermes doctor` checks the 
 
 ## 3. Get the kit
 
-I'll invite you to the private GitHub repo. Accept the invite, then:
+The repo is public: https://github.com/Saksham-Rustagi/job-apply-kit. In Terminal:
 
 ```bash
 cd ~
@@ -86,9 +86,8 @@ cd ~/job-apply-kit
 bash install.sh
 ```
 
-(If `git` asks you to install developer tools, say yes, then run the clone again. If the clone asks for a password,
-the easiest fix is installing the GitHub CLI and running `gh auth login`, or download the repo as a ZIP from GitHub
-and unzip it to `~/job-apply-kit`.)
+(If `git` asks you to install developer tools, say yes, then run the clone again. No git? On the GitHub page click
+Code > Download ZIP and unzip it to `~/job-apply-kit`; you'll miss `git pull` updates, so re-download now and then.)
 
 `install.sh` checks Python, creates your private profile files, runs the self-tests, links the skill into Hermes, and
 checks that Chrome is installed. Re-run it any time; it's safe.
