@@ -1,0 +1,48 @@
+REFERENCE FILE: everything about you that essays and short answers may draw on.
+Copy to profile/reference.txt and replace the examples. Plain text; write in your own words.
+Rule: only put things here that are TRUE and that you could defend in an interview. Numbers only if you can prove them
+(counts, ranks with their scope). The bot will never claim anything that isn't in this file or your resume.
+
+==================================================================
+BASICS
+==================================================================
+Name: 
+School, degree, majors/minors, graduation month + year: 
+Relevant coursework: 
+What kind of roles you want, and why (2-3 sentences, your words): 
+
+==================================================================
+EXPERIENCE (most recent first; one block per job / internship / part-time role)
+==================================================================
+Company: 
+Title, dates (Mon YYYY - Mon YYYY), full-time / part-time / internship: 
+Team and product (1 line): 
+What you built (2-5 lines: the problem, your part, the stack): 
+Something countable (tests written, users, features shipped, PRs, size of data): 
+Hardest technical problem and how you solved it: 
+Did you use AI coding tools? How (you owned design/specs/review/testing?): 
+Manager / supervisor name, title, email (only if you're OK with forms using it): 
+
+==================================================================
+PROJECTS (2-4)
+==================================================================
+Name + link (GitHub / demo): 
+What it does, who uses it (you? others?): 
+Stack and the most interesting technical piece: 
+Proof points (stars, users, hackathon placement WITH scope, e.g. "2nd of 40 teams"): 
+
+==================================================================
+AWARDS / COMPETITIONS (with year and scope: site / region / national)
+==================================================================
+
+
+==================================================================
+ACTIVITIES / LEADERSHIP / TEACHING
+==================================================================
+
+
+==================================================================
+ANSWERS YOU'VE ALREADY WRITTEN THAT YOU LIKED
+(paste old essays here; drafts will reuse their phrasing)
+==================================================================
+

@@ -1,0 +1,182 @@
+// =====================================================================================================
+// YOUR APPLICATION PROFILE
+// Copy this file to profile/profile.jsonc and fill it in (or ask Hermes: "help me fill my job profile").
+// profile.jsonc is in .gitignore, so it never gets committed.
+//
+// Format: plain JSON. Lines starting with // are comments. Do NOT put a comment after a value on the
+// same line, and do not leave a comma after the last item in a { } or [ ] block.
+// Check it any time with:   python3 applyq/candidate.py
+//
+// Leave anything you don't know as "". The bot will NEVER guess it: questions that need it are marked
+// "you" and show up in `python3 applyq/applyq.py missing`.
+// =====================================================================================================
+{
+  "name": {
+    "first": "",
+    "last": "",
+    // What you go by, if different from your legal first name (else repeat the first name)
+    "preferred": "",
+    "pronouns": "",
+    // Some forms require a phonetic spelling, e.g. "MAH-ree-uh". Leave "" if you don't want one used.
+    "pronunciation": ""
+  },
+
+  "contact": {
+    // Personal email used on every application
+    "email": "",
+    // Only used when a posting explicitly asks for a school / university email
+    "school_email": "",
+    "phone": "",
+    "linkedin": "",
+    "github": "",
+    // Personal website. Leave "" if you have none: then "Website / Portfolio" boxes get your GitHub,
+    // unless the same form already has a separate GitHub box.
+    "website": ""
+  },
+
+  "location": {
+    // Where you live now / your home address city. Used for "current location" questions.
+    "city": "",
+    "state": "",
+    "state_abbr": "",
+    "country": "United States",
+    // Street address is only used when a form requires it. Leave "" to be asked each time.
+    "street": "",
+    "zip": "",
+    // Location autocomplete boxes (Greenhouse/Ashby/Lever) search for a city: what to type, and the text of
+    // the suggestion to click. Example: "Durham" and "Durham, North Carolina".
+    "autocomplete_query": "",
+    "autocomplete_match": ""
+  },
+
+  "education": {
+    "school": "",
+    // What to type into school search boxes, and a word that appears only in the right result
+    // (e.g. "University of North Carolina at Chapel Hill" and "Chapel Hill").
+    "school_search": "",
+    "school_match": "",
+    // Shown on "current company" when a form REQUIRES one and you are a full-time student
+    "school_short": "",
+    "degree": "Bachelor of Science",
+    // Bachelor's / Master's / PhD: used for degree dropdowns
+    "degree_level": "Bachelor's",
+    "majors": ["Computer Science"],
+    "minors": [],
+    // One line describing the degree, used in free-text "major" boxes
+    "major_text": "Computer Science",
+    // Exactly as you want it reported; "" = leave GPA questions for you
+    "gpa": "",
+    // YYYY-MM
+    "start": "2023-08",
+    "end": "2027-05",
+    "grad_text": "May 2027",
+    // Has your in-progress bachelor's count as "completed at least a bachelor's?" (most new-grad forms
+    // expect Yes, and No can auto-reject). Set false if you'd rather answer No.
+    "in_progress_degree_counts_as_completed": true,
+    "high_school": "",
+    "high_school_year": "",
+    // "" = "did not take" is NOT assumed; such questions are left for you.
+    "act": "",
+    "sat": ""
+  },
+
+  "work": {
+    "currently_employed": false,
+    "current_employer": "",
+    "current_title": "",
+    // Most recent job/internship (for "most recent employer" questions)
+    "last_employer": "",
+    "last_title": "",
+    // Every company you have worked for (incl. internships), for "have you ever worked at X?"
+    "past_employers": [],
+    // Full-time years excluding internships (new grads: 0)
+    "full_time_years": 0,
+    // Total years of engineering experience INCLUDING internships/part-time, by your resume dates.
+    // Used for "combined experience" bucket questions. Recruiters check buckets against resume dates.
+    "total_experience_years": 0,
+    "non_compete": false,
+    "ever_terminated": false
+  },
+
+  "eligibility": {
+    "us_work_authorized": true,
+    "needs_sponsorship_now": false,
+    "needs_sponsorship_future": false,
+    // Free-text answer for "what is your current visa / work authorization status?"
+    // e.g. "US citizen", "Permanent resident", "F-1 student on OPT (STEM OPT eligible)"
+    "visa_status": "",
+    "us_citizen": true,
+    "permanent_resident": false,
+    // Countries other than the US where you can work without sponsorship (template forms ask about
+    // Canada / UK / Poland etc. on US jobs). [] = no.
+    "other_countries_authorized": [],
+    // "none" if you've never held one; otherwise the level, e.g. "Secret (active)"
+    "clearance_held": "none",
+    "willing_to_get_clearance": true,
+    "over_18": true
+  },
+
+  "preferences": {
+    // Earliest start date: ISO for date pickers, text for free-text boxes
+    "start_date": "2027-06-01",
+    "start_text": "June 2027",
+    "employment_type": "Full-Time",
+    "willing_to_relocate": true,
+    "onsite_ok": true,
+    // true = any amount of travel is fine
+    "travel_ok": true,
+    // Ordered office preferences for "which office?" dropdowns, e.g. ["New York", "San Francisco"].
+    // [] = pick "any"/"no preference" when offered, else ask.
+    "office_preference": [],
+    // Default answer to "how did you hear about this job?"
+    "how_heard": "LinkedIn",
+    // Salary questions use the posting's own published range when there is one. When there is none and the
+    // form forces a number, use this number (or the lowest dropdown band containing it). 0 = always ask.
+    "salary_default": 100000,
+    "languages_spoken": ["English"],
+    "strongest_language": "Python",
+    // Free text for "top 3 programming languages"
+    "top_languages": ""
+  },
+
+  "consents": {
+    // Each true/false is your standing answer to that checkbox/question on every form.
+    "sms_updates_ok": true,
+    "privacy_and_data_processing_ack": true,
+    "consider_for_future_roles": true,
+    "share_resume_with_partners": true,
+    "interview_recording_or_ai_notetaker_ok": true,
+    // Lets the bot type your name into "type your name to sign" attestation boxes. false = left for you.
+    "esign_ok": true,
+    // Arbitration agreements are always left for you, whatever this says.
+    "arbitration": ""
+  },
+
+  // Voluntary EEO / self-identification. Write the answer as it appears on most forms, or "decline" to pick
+  // the "I don't wish to answer" option. "" = leave these questions for you.
+  //   gender: "Male" / "Female" / "Non-binary" / "decline"
+  //   hispanic: "Yes" / "No" / "decline"
+  //   race: e.g. "Asian", "White", "Black or African American", "Two or More Races", "decline"
+  //   veteran: "No" / "Yes" / "decline"        disability: "No" / "Yes" / "decline"
+  //   transgender: "No" / "Yes" / "decline"    orientation: e.g. "Heterosexual", "Gay", "Bisexual", "decline"
+  //   age_band: e.g. "18-24" or "decline"
+  "eeo": {
+    "gender": "decline",
+    "hispanic": "decline",
+    "race": "decline",
+    "veteran": "decline",
+    "disability": "decline",
+    "transgender": "decline",
+    "orientation": "decline",
+    "age_band": "decline"
+  },
+
+  "files": {
+    // Full paths on your Mac. ~ is fine.
+    "resume": "~/job-search/resume.pdf",
+    "transcript": "",
+    // Long free-text "everything about me" file the essay drafts are grounded in (template:
+    // profile/reference.example.txt)
+    "reference": "~/job-apply-kit/profile/reference.txt"
+  }
+}
